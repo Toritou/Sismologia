@@ -92,12 +92,13 @@ public class Taller01Sismos {
                     System.out.println("Todos los datos ingresados.");
                     break;
                 case 2:
-                    double mayorSismo = mayorSismo(lecturas);
-                    System.out.println("El sismo de mayor magnitud es: " + mayorSismo);
+                    System.out.println("El sismo de mayor magnitud es");
+                    imprimirLecturas();
+
                     break;
                 case 3:
-                    imprimirLecturas();
-                    System.out.println("La cantidad de sismos mayores o iguales a 5.0 es: ");
+                    int cantidadSismos = contarSismos(lecturas);
+                    System.out.println("La cantidad de sismos mayores o iguales a 5.0 es: " + cantidadSismos);
                     break;
                 case 4:
                     enviarSMS(lecturas);
